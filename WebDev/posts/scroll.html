@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang= 'en'>
+
+
+    <head>
+        <title></title>
+    </head>
+    <script>
+        
+
+        function entries(){
+            for(var i=0;i<100;i++){
+                document.body.innerHTML += `<p>${i+1}</p>`
+            }
+        }
+        window.onscroll = function(){
+            if (window.innerHeight+window.scrollY >= document.body.offsetHeight){
+                document.querySelector('body').style.background = 'green'
+            }else{
+                document.querySelector('body').style.background = 'white'
+            }
+        }
+        document.addEventListener("DOMContentLoaded",entries)
+    </script>
+    <body>
+
+    </body>
+</html>
